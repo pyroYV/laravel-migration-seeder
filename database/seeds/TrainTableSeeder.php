@@ -1,5 +1,6 @@
 <?php
 
+use App\Train;
 use Illuminate\Database\Seeder;
 
 class TrainTableSeeder extends Seeder
@@ -61,7 +62,7 @@ class TrainTableSeeder extends Seeder
 
         foreach ($trains as $train) {
             $newTrain = new Train();
-            $newTrain->Azienda = $train['azienda'];
+            $newTrain->Azienda = $train['Azienda'];
             $newTrain->Stazione_Partenza = $train['Stazione_Partenza'];
             $newTrain->Stazione_Arrivo = $train['Stazione_Arrivo'];
             $newTrain->Orario_Partenza = $train['Orario_Partenza'];
