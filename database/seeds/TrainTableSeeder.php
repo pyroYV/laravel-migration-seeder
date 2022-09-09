@@ -66,11 +66,14 @@ class TrainTableSeeder extends Seeder
             $newTrain->Stazione_Partenza = $train['Stazione_Partenza'];
             $newTrain->Stazione_Arrivo = $train['Stazione_Arrivo'];
             $newTrain->Orario_Partenza = $train['Orario_Partenza'];
+            $newTrain->Orario_Arrivo = $train['Orario_Arrivo'];
             $newTrain->Codice_Treno = $train['Codice_Treno'];
             $newTrain->Numero_Carrozze = $train['Numero_Carrozze'];
             $newTrain->In_orario = $train['In_orario'];
             $newTrain->Cancellato = $train['Cancellato'];
 
+
+            $newTrain->save();
         }
     }
 }
